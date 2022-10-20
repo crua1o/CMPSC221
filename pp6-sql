@@ -1,0 +1,43 @@
+// Couldn't figure out how to upload the actual sql file here
+
+DROP TABLE TITLES;
+DROP TABLE AWARDS;
+
+CREATE TABLE TITLES (
+                         movieID INT NOT NULL,
+                         title varchar (100) NOT NULL,
+                         rating varchar (20) NOT NULL,
+                         genre varchar (100) NOT NULL,
+                         director varchar (100) NOT NULL,
+                         star varchar (100) NOT NULL,
+                         PRIMARY KEY (movieID)
+);
+CREATE TABLE AWARDS (
+                            movieID INT NOT NULL,
+                            award varchar (100) NOT NULL,
+                            awardYear INT NOT NULL,
+                            FOREIGN KEY (movieID) REFERENCES TITLES (movieID)
+);
+
+INSERT INTO TITLES (movieID, title, rating, genre, director, star)
+VALUES
+    (1, 'Forrest Gump', 'PG-13', 'Drama', 'Robert Zemeckis', 'Tom Hanks'),
+    (2, 'The Godfather', 'R', 'Crime', 'Francis Ford Cappola', 'Marlon Brando'),
+    (3, 'Inception', 'PG-13', 'Action', 'Christopher Nolan', 'Christian Bale'),
+    (4, 'Cars', 'G', 'Animation', 'John Lasseter', 'Owen Wilson'),
+    (5, 'Scream', 'R', 'Horror', 'Wes Craven', 'Neve Campbell'),
+    (6, 'The Hangover', 'R', 'Comedy', 'Todd Phillips', 'Zach Galifianakis'),
+    (7, 'Avengers: Infinity War', 'PG-13', 'Action', 'Anthony Russo', 'Robert Downey Jr.'),
+    (8, 'Hamilton', 'PG-13', 'Biography', 'Thomas Kail', 'Lin-Manuel Miranda'),
+    (9, 'Titanic', 'PG-13', 'Romanca', 'James Cameron', 'Leonardo DiCaprio'),
+    (10, 'Harry Potter and the Goblet of Fire', 'PG-13', 'Adventure', 'Mike Newell', 'Daniel Radcliffe'),
+    (11, 'X-Men: Days of Future Past', 'PG-13', 'Action', 'Bryan Singer', 'Patrick Stewart');
+
+INSERT INTO AWARDS (movieID, award, awardYear)
+VALUES
+    (1, 'Oscar for Best Picture', 1995),
+    (2, 'Oscar for Best Picture', 1973),
+    (3, 'Oscar for Best Achievement in Cinematography', 2011),
+    (8, 'Primetime Emmy for Outstanding Variety Special', 2021),
+    (9, 'Oscar for Best Picture', 1998);
+
