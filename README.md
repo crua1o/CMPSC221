@@ -25,6 +25,13 @@ Create a Java application that implements an online specialty pizza shop.
 
 Create a Movie class and child class Award-Winning Movie. Create objects of both classes. Prompt user to learn more about a movie through a series of prompts that will eventually display the movie object's information.
 
+## Music Selection
+
+Create a Java application that enables a user to create a playlist from an online music library.
+1. Create music library
+2. Create/delete/modify playlist
+3. Thank user
+
 ## Query Movies Database
 
 ### Description
