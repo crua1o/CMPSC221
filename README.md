@@ -12,6 +12,14 @@ Specific vehicle information that can be retrieved without too much difficulty i
 Your program begins by prompting the user to enter a string representing a VIN. If the VIN is valid, it is decoded to display the 3 groups (WMI, VDS, VIS) and 5 attributes (country, manufacturer, check digit, model year, serial number) described above. If it is invalid, an appropriate error message is displayed. The program then asks the user if s/he wishes to enter another VIN. Depending upon the user’s response, the 
 program either prompts for another VIN or thanks the user for using the VIN decoder and ends.
 
+## Online Pizza Shop
+
+Create a Java application that implements an online specialty pizza shop.
+1. Obtain order.
+2. Display order summary
+3. Process payment
+4. Thank customer
+
 ## Query Movies Database
 
 ### Description
