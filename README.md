@@ -20,6 +20,11 @@ Create a Java application that implements an online specialty pizza shop.
 3. Process payment
 4. Thank customer
 
+
+## Movie
+
+Create a Movie class and child class Award-Winning Movie. Create objects of both classes. Prompt user to learn more about a movie through a series of prompts that will eventually display the movie object's information.
+
 ## Query Movies Database
 
 ### Description
