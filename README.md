@@ -1,4 +1,17 @@
-# movies-database
+# CMPSC221 Projects
+
+## Decode the VIN
+
+Your task is to create a Java application that implements a simple Vehicle Identification Number (VIN) decoder. A VIN is a unique code that an automobile manufacturer assigns to an individual vehicle. Although in use since 1954, VINs were not standardized until 1981. The standardized format requires that 
+a VIN contain 17 characters consisting only of letters and digits. (Technically, the letters I, O, and Q are not allowed.) A VIN is composed of 3 main sections: 
+1. World Manufacturer Identifier (WMI) – Characters 1 through 3 indicate the country in which a vehicle was made and the manufacturer who made it. 
+2. Vehicle Descriptor Section (VDS) – Characters 4 through 8 identify the vehicle type and may include information about model, body style, and engine type. Character 9 is a check digit used to detect invalid VINs. 
+3. Vehicle Identifier Section (VIS) – Characters 10 through 17 identify the model year, manufacturing plant, and serial number. 
+Specific vehicle information that can be retrieved without too much difficulty is: country of origin (character 1), manufacturer (character 2), check digit (character 9), model year (character 10), and serial number (characters 12 through 17).  
+ 
+Your program begins by prompting the user to enter a string representing a VIN. If the VIN is valid, it is decoded to display the 3 groups (WMI, VDS, VIS) and 5 attributes (country, manufacturer, check digit, model year, serial number) described above. If it is invalid, an appropriate error message is displayed. The program then asks the user if s/he wishes to enter another VIN. Depending upon the user’s response, the 
+program either prompts for another VIN or thanks the user for using the VIN decoder and ends.
+
 ## Query Movies Database
 
 ### Description
